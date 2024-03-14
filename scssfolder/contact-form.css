@@ -1,0 +1,160 @@
+.form-overlay {
+  position: fixed;
+  height: 100vh;
+  padding-top: 20px;
+  margin-bottom: 50px !important;
+  width: 100%;
+  top: 0;
+  z-index: 105;
+}
+.form-overlay .form-container .form {
+  padding: 30px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  position: relative;
+  font-family: "Kanit";
+  font-weight: 400;
+  font-size: 20px;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  width: 40%;
+  height: 650px;
+  z-index: 107;
+  top: 0;
+  right: 0;
+}
+.form-overlay .form-container .form:hover {
+  box-shadow: 0 0 10px 8px rgb(58, 58, 58);
+}
+.form-overlay .form-container .form .inner-form {
+  display: flex;
+  flex-direction: column;
+  margin-left: 11%;
+}
+.form-overlay .form-container .form .form-close {
+  position: absolute;
+  height: 33px;
+  width: 33px;
+  right: 20px;
+  padding: 10px;
+  top: 10px;
+  animation-name: hover-out;
+  animation-duration: 1s;
+}
+.form-overlay .form-container .form .form-close:hover {
+  animation: hover-in 1s forwards;
+}
+.form-overlay .form-container .form p {
+  padding: 10px;
+}
+.form-overlay .form-container .form label {
+  justify-content: center;
+  text-align: center;
+  align-content: center;
+  margin: auto;
+}
+.form-overlay .form-container .form input {
+  height: 30px;
+  border: 1px black solid;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  font-family: "Kanit";
+}
+.form-overlay .form-container .form input:hover {
+  border-bottom: 2px black solid;
+}
+.form-overlay .form-container .form input::-moz-placeholder {
+  color: rgb(167, 167, 167);
+}
+.form-overlay .form-container .form input::placeholder {
+  color: rgb(167, 167, 167);
+}
+.form-overlay .form-container .form input:active {
+  border: none;
+}
+.form-overlay .form-container .form textarea {
+  border: 1px black solid;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  resize: none !important;
+  cursor: text;
+}
+.form-overlay .form-container .form textarea:hover {
+  border-bottom: 2px black solid;
+}
+.form-overlay .form-container .form .wpcf7-submit {
+  padding: 10px;
+  width: 200px;
+  margin-top: 20px;
+  margin-left: 15%;
+  justify-content: center;
+  border: 1.5px black solid;
+  height: 40px;
+  font-weight: 600;
+  text-transform: uppercase;
+  background-color: rgb(173, 173, 173);
+  letter-spacing: 1.5px;
+}
+.form-overlay .form-container .form .wpcf7-submit:hover {
+  background-color: black;
+  color: white;
+  transition: 0.6s;
+}
+.form-overlay .form-container .form .wpcf7-response-output {
+  background-color: white;
+  border-radius: 10px;
+  border-color: red;
+}
+
+.slideOut {
+  animation: slideOut 1s forwards;
+}
+
+.slideIn {
+  animation: slideIn 2s forwards;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-250%) translateY(100%);
+  }
+  to {
+    transform: translateX(30%) translateY(5%);
+  }
+}
+@keyframes slideOut {
+  from {
+    transform: translateX(30%) translateY(5%);
+  }
+  to {
+    transform: translateX(120%) translateY(-120%);
+  }
+}
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+@keyframes hover-in {
+  0% {
+    scale: 1;
+  }
+  100% {
+    scale: 1.5;
+  }
+}
+@keyframes hover-out {
+  0% {
+    scale: 1.5;
+  }
+  100% {
+    scale: 1;
+  }
+}

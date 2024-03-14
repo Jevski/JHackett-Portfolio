@@ -1,0 +1,84 @@
+//Banner//
+.banner{
+
+
+    // .header-image{
+    //     position: relative;
+    //     background-attachment: fixed;
+    //     width:100vw;
+    //     height:75vh;
+    //     padding:0px;
+    //     object-position:top;
+    //     z-index:-1;
+    //     }
+    .banner-title{
+        opacity: 1;
+        padding:20px;
+        position:absolute;
+        width:300px;
+        font-size: 20px;
+        top:11%;
+        left:13%;
+        background: white;
+        color: black;
+        mix-blend-mode: screen;
+        border-radius: 20px;
+        
+        
+    }
+
+}
+
+
+
+#about-me{
+    display: flex;
+    height:50vh;
+    background-image: url('');
+    background-position: center;
+    background-size:contain;
+    object-fit: cover;
+    padding:30px;
+    width:70%;
+    margin-left:30%;
+
+    .aboutme{
+        display: flex;
+        
+        // justify-content: space-around;
+      
+        .about-me-info{
+            width:50%;
+            font-size:20px;
+            padding-left:50px;
+            margin-left:100px;
+        }
+        .about-me-photo{
+            padding-top:50px;
+        }
+        .photo-aboutme{
+            object-fit: cover;
+            height:250px;
+            width:250px;
+            border-radius: 50%;
+            border: 3px solid grey;
+           
+            
+        }
+    }
+}
+
+.banner-title:hover{
+    animation: grow 1.2s ease-in-out forwards; 
+    
+}
+
+@keyframes grow {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(1.1); /* Adjust the scale factor as needed */
+    }
+
+  }

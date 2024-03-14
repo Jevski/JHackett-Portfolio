@@ -1,0 +1,28 @@
+.body{
+    background-color: rgb(219, 210, 197);
+    font-family: 'Oswald';
+}
+h2{
+    margin-left:5%;
+    font-size: 40px;
+    line-height: 40px;
+    letter-spacing:1.5px;
+}
+a:-webkit-any-link {
+    color:inherit;
+    text-decoration: none; /* Remove underline from links */
+}
+fieldset{
+    border:none;
+}
+.inactive{
+    display:none;
+}
+
+
+@import "scssfolder/header.scss";
+@import "scssfolder/skills.scss";
+@import "scssfolder/portfolio.scss";
+@import "scssfolder/aboutme.scss";
+@import "scssfolder/single-projects.scss";
+@import "scssfolder/contact-form.scss";

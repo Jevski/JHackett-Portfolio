@@ -1,0 +1,115 @@
+.header-navigation {
+  position: fixed;
+  background: rgb(0, 160, 163);
+  background: linear-gradient(0deg, rgb(131, 202, 203) 0%, rgb(246, 219, 160) 100%);
+  padding: 30px;
+  width: 30%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+}
+.header-navigation .menu-navigation {
+  margin-left: 5%;
+  margin-top: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  -moz-column-gap: 0px;
+       column-gap: 0px;
+}
+.header-navigation .menu-navigation .menu-item {
+  height: 50px;
+  font-family: "Oswald";
+  font-size: 40px;
+  padding: 15px;
+  color: rgb(0, 0, 0);
+  text-decoration: none !important;
+  width: 40%;
+}
+.header-navigation .menu-navigation .menu-item .home-button-menu {
+  cursor: pointer;
+}
+
+.menu-item:hover {
+  animation: grow 0.5s ease-in-out forwards, zoom 0.7s ease-in-out forwards;
+  color: black;
+}
+
+.home-button-menu {
+  cursor: pointer;
+}
+
+.logo-navigation {
+  position: absolute;
+  margin-left: 5%;
+  margin: auto;
+  margin-top: 1%;
+  z-index: 101;
+  height: 25px;
+  width: auto;
+  cursor: pointer;
+}
+
+.menu-item::after {
+  content: "";
+  position: absolute;
+  bottom: -3px; /* Adjust as needed */
+  left: 0;
+  width: 100%;
+  height: 2px; /* Adjust as needed */
+  background-color: rgb(0, 0, 0); /* Adjust the color as needed */
+  transition: width 0.4s ease;
+}
+
+.menu-item:hover::after {
+  animation: underline-in 0.3s forwards;
+}
+
+.menu-item::after {
+  animation: underline-out 0.3s reverse;
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(0);
+  }
+  25% {
+    transform: translate(-5px);
+  }
+  50% {
+    transform: translate(5px);
+  }
+  75% {
+    transform: translate(-5px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+@keyframes zoom {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes underline-in {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes underline-out {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0;
+  }
+}

@@ -1,0 +1,17 @@
+.projects-page {
+  background-color: aliceblue;
+}
+.projects-page .main-post-div .content-here .banner-image {
+  background-color: bisque;
+  padding: 20px;
+}
+.projects-page .main-post-div .content-here .banner-image img {
+  width: 50%;
+  height: auto;
+  margin-left: 25% !important;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 2px solid grey;
+  justify-content: center;
+  align-content: center;
+}
