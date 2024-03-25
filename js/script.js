@@ -1,5 +1,5 @@
 $(document).ready(function(){
-console.log('testing');
+
 
 
 // Click event to close the form
@@ -18,11 +18,15 @@ $(".form-close").click(function() {
 });
 
 $('.contact-menu').click(function(){
+    console.log('testing');
     $('.form-overlay, .form-container').toggleClass('inactive');
     $('.form').toggleClass('slideIn slideOut');
 
 });
 
+$('.logo-navigation').click(function(){
+    console.log('testing');
 
+})
 
 });

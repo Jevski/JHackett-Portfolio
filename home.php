@@ -39,8 +39,35 @@ get_header();
 <section id="skills">
     <h2 class="skills-title">Skills</h2>
         <div class="skills-info">
-            <!-- Add content for skills section -->
+           
+            <div class="php-box">
+                <img class="php-icon" src="<?php echo get_template_directory_uri(); ?>\Assets\php.png" alt='PHP Icon'/>
+                <div class="php-info "></div>
+            </div>
+
+            <div class="js-box">
+                <img class="js-icon" src="<?php echo get_template_directory_uri(); ?>\Assets\js-format.png" alt='PHP Icon'/>
+
+            </div>
+
+            <div class="html-box">
+                <img class="html-icon" src="<?php echo get_template_directory_uri(); ?>\Assets\html.png" alt='PHP Icon'/>
+
+            </div>
+
+            <div class="wordpress-box">
+                <img class="wordpress-icon" src="<?php echo get_template_directory_uri(); ?>\Assets\wordpress-icon.png" alt='PHP Icon'/>
+
+            </div>
+            
+            <div class="css-box">
+                <img class="css-icon" src="<?php echo get_template_directory_uri(); ?>\Assets\css-file.png" alt='PHP Icon'/>
+
+            </div>
         </div>
+        <div class="skills-text"> 
+        <span>Combining these skills, you have the capability to create diverse WordPress sites, ranging from simple blogs to complex web applications, while ensuring they are visually appealing, functional, and user-friendly. My ability to leverage these technologies in multiple ways demonstrates my adaptability and proficiency in web development.<br><br> I hope to continue learning and adding skills to my repertoire.</span>
+</div>
 </section>
 
 </body>

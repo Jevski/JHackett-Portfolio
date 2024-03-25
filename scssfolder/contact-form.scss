@@ -62,13 +62,11 @@
                 top:10px;
                 animation-name: hover-out;
                 animation-duration: 1s;
-                
+                cursor: pointer;
                 &:hover{
                   animation: hover-in 1s forwards;
                 }
             }
-            
-           
             
             & p {
                 padding:10px;
@@ -79,17 +77,17 @@
                 align-content: center;
                 margin: auto;
                
-                
             }
             & input{
                 height:30px;
-                border:1px black solid;
+                border:1px rgb(41, 60, 99) solid;
                 border-top:none;
                 border-left:none;
                 border-right:none;
                 font-family: 'Kanit';
+                color: rgb(41, 60, 99);
                 &:hover{
-                    border-bottom:2px black solid;
+                    border-bottom:2px rgb(41, 60, 99) solid;
                 }
                 &::placeholder{
                     color:rgb(167, 167, 167);
@@ -99,14 +97,16 @@
                 }
             }
             & textarea{
-                border:1px black solid;
+                border:1px rgb(41, 60, 99) solid;
                 border-top:none;
                 border-left:none;
                 border-right:none;
                 resize:none !important;
+                color: rgb(41, 60, 99);
                 cursor:text;
                 &:hover{
-                    border-bottom:2px black solid;
+                  border-bottom:2px rgb(41, 60, 99) solid;
+
 
                 }
                  
@@ -125,7 +125,7 @@
                 letter-spacing: 1.5px;
                 
                 &:hover{
-                    background-color: black;
+                  background-color: rgb(41, 60, 99);
                     color: white;
                     transition: 0.6s;;
                 }
@@ -145,11 +145,11 @@
 }
 
 .slideOut{
-  animation: slideOut 1s forwards;
+  animation: slideOut 0.5s forwards;
 }
 
 .slideIn{
-animation: slideIn 2s forwards;
+animation: slideIn 1.2s forwards;
 }
 
 @keyframes slideIn {

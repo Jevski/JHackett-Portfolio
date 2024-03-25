@@ -1,13 +1,21 @@
+html {
+  margin-top: -8px !important;
+  margin-right: -20px;
+  width: 100vw;
+}
+
 .body {
-  background-color: rgb(219, 210, 197);
+  background: linear-gradient(0deg, rgb(131, 202, 203) 0%, rgb(166, 160, 246) 100%);
   font-family: "Oswald";
+  color: rgb(41, 60, 99);
 }
 
 h2 {
-  margin-left: 5%;
-  font-size: 40px;
+  margin-left: 35%;
+  font-size: 50px;
   line-height: 40px;
   letter-spacing: 1.5px;
+  color: rgb(41, 60, 99);
 }
 
 a:-webkit-any-link {
@@ -25,8 +33,7 @@ fieldset {
 
 .header-navigation {
   position: fixed;
-  background: rgb(0, 160, 163);
-  background: linear-gradient(0deg, rgb(131, 202, 203) 0%, rgb(246, 219, 160) 100%);
+  background: linear-gradient(0deg, rgb(131, 202, 203) 30%, rgb(166, 160, 246) 100%);
   padding: 30px;
   width: 30%;
   height: 100vh;
@@ -34,20 +41,23 @@ fieldset {
   left: 0;
 }
 .header-navigation .menu-navigation {
-  margin-left: 5%;
-  margin-top: 35%;
+  margin-left: 12%;
+  margin-top: 40%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   -moz-column-gap: 0px;
        column-gap: 0px;
 }
+.header-navigation .menu-navigation .contact-menu {
+  cursor: pointer;
+}
 .header-navigation .menu-navigation .menu-item {
   height: 50px;
   font-family: "Oswald";
   font-size: 40px;
   padding: 15px;
-  color: rgb(0, 0, 0);
+  color: rgb(41, 60, 99);
   text-decoration: none !important;
   width: 40%;
 }
@@ -57,7 +67,7 @@ fieldset {
 
 .menu-item:hover {
   animation: grow 0.5s ease-in-out forwards, zoom 0.7s ease-in-out forwards;
-  color: black;
+  color: rgb(189, 0, 0);
 }
 
 .home-button-menu {
@@ -82,16 +92,12 @@ fieldset {
   left: 0;
   width: 100%;
   height: 2px; /* Adjust as needed */
-  background-color: rgb(0, 0, 0); /* Adjust the color as needed */
-  transition: width 0.4s ease;
+  background-color: rgb(41, 60, 99); /* Adjust the color as needed */
+  transition: width 0.9s ease;
 }
 
 .menu-item:hover::after {
-  animation: underline-in 0.3s forwards;
-}
-
-.menu-item::after {
-  animation: underline-out 0.3s reverse;
+  animation: underline-in 0.7s forwards;
 }
 
 @keyframes shake {
@@ -116,7 +122,7 @@ fieldset {
     transform: scale(1);
   }
   50% {
-    transform: scale(1.2);
+    transform: scale(1.1);
   }
   100% {
     transform: scale(1);
@@ -138,6 +144,36 @@ fieldset {
     width: 0;
   }
 }
+#skills {
+  border-top: 4px groove rgb(94, 94, 175);
+  padding-top: 50px;
+  padding-bottom: 150px;
+  margin-left: 32%;
+  background: linear-gradient(0deg, rgb(166, 160, 246) 30%, rgb(131, 202, 203) 90%);
+}
+#skills .skills-title {
+  padding: 35px;
+  margin-left: 40%;
+}
+#skills .skills-info {
+  display: inline-flex;
+  justify-content: space-evenly;
+  margin-left: 27%;
+}
+#skills .skills-text {
+  margin-left: 23%;
+  font-size: 25px;
+  width: 700px;
+  text-align: center;
+  justify-content: center;
+}
+
+.skills-info img {
+  height: 65px;
+  width: 65px;
+  padding: 20px;
+}
+
 h3 {
   font-size: 26px;
   font-family: "Roboto Mono";
@@ -146,51 +182,54 @@ h3 {
 
 .portfolio {
   height: 100vh;
-  padding-bottom: 50px;
+  padding-bottom: -50px;
   padding-top: 50px;
-  background-color: rgb(156, 156, 156);
+  background: linear-gradient(0deg, rgb(131, 202, 203) 100%, rgb(166, 160, 246) 0%);
   width: 70%;
-  border: 2px solid rgb(99, 99, 99);
   margin-left: 30%;
 }
 .portfolio .portfolio-title {
-  margin-left: 55% !important;
+  margin-left: 45% !important;
   margin-bottom: 50px;
 }
 .portfolio .content-area .entry-content .portfolio-each {
   display: flex;
+  flex-direction: column;
+  row-gap: 30px;
   justify-content: space-evenly;
-  width: 80%;
+  width: 70%;
   margin-left: 10%;
-  background-color: red;
-  -moz-columns: 3;
-       columns: 3;
-  flex-wrap: wrap;
   padding: 20px;
-  row-gap: 40px;
   height: auto;
 }
 .portfolio .content-area .entry-content .portfolio-each .portfolio-item {
-  background-color: rgb(255, 255, 255);
-  border: 2px solid rgb(53, 52, 52);
+  background-color: transparent;
   border-radius: 10px;
-  width: 300px;
-  height: 380px;
-  margin: auto;
+  width: 840px;
+  height: 330px;
+  margin-left: 10%;
+}
+.portfolio .content-area .entry-content .portfolio-each .portfolio-item:hover {
+  box-shadow: 0 0 10px 3px rgb(246, 219, 160);
+  background-color: rgba(255, 255, 255, 0.2);
 }
 .portfolio .content-area .entry-content .portfolio-each .portfolio-item h3 {
-  margin-left: 20%;
+  margin-left: 40%;
   justify-content: center;
   text-decoration: none !important;
 }
 .portfolio .content-area .entry-content .portfolio-each .portfolio-item .portfolio-thumbnail img {
-  width: 80%;
-  -o-object-fit: fill;
-     object-fit: fill;
+  width: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
   margin-left: 30px;
+  border-radius: 5px;
 }
 .portfolio .content-area .entry-content .portfolio-each .portfolio-item .portfolio-description {
-  padding: 5%;
+  padding: 2%;
+}
+.portfolio .content-area .entry-content .portfolio-each .portfolio-item .item-content {
+  display: inline-flex;
 }
 
 .banner .banner-title {
@@ -208,36 +247,46 @@ h3 {
 }
 
 #about-me {
-  display: flex;
-  height: 50vh;
+  display: inline-block;
+  height: 60vh;
   background-image: url("");
   background-position: center;
   background-size: contain;
   -o-object-fit: cover;
      object-fit: cover;
-  padding: 30px;
+  padding: 0;
   width: 70%;
   margin-left: 30%;
+  background: linear-gradient(0deg, rgb(131, 202, 203) 0%, rgb(166, 160, 246) 100%);
+  border-bottom: none;
+}
+#about-me .about-me-title {
+  margin-left: 10%;
 }
 #about-me .aboutme {
+  width: 100%;
   display: flex;
+  justify-content: space-between;
 }
 #about-me .aboutme .about-me-info {
   width: 50%;
   font-size: 20px;
   padding-left: 50px;
-  margin-left: 100px;
+  padding-right: 120px;
+  text-align: center;
 }
 #about-me .aboutme .about-me-photo {
-  padding-top: 50px;
+  padding-top: 30px;
+  flex: 1 1 auto;
+  margin-left: 12%;
 }
 #about-me .aboutme .photo-aboutme {
   -o-object-fit: cover;
      object-fit: cover;
   height: 250px;
   width: 250px;
-  border-radius: 50%;
-  border: 3px solid grey;
+  border-radius: 37%;
+  box-shadow: 0px 0px 20px 5px #f0efb9;
 }
 
 .banner-title:hover {
@@ -253,22 +302,89 @@ h3 {
   }
 }
 .projects-page {
-  background-color: aliceblue;
+  font-family: "Oswald";
+  color: rgb(41, 60, 99);
+  width: 100%;
+  background: linear-gradient(0deg, rgb(131, 202, 203) 30%, rgb(166, 160, 246) 100%);
+  height: auto;
+  padding-bottom: 100px;
+  font-size: 20px;
+}
+.projects-page .banner-image {
+  background-color: transparent;
+  margin-left: 10%;
+}
+.projects-page .main-post-div .single-page-post-heading {
+  padding-top: 40px;
+  margin-left: 55%;
+  font-size: 50px;
+}
+.projects-page .main-post-div .content-here {
+  margin-left: 20%;
+}
+.projects-page .main-post-div .content-here .wp-element-caption {
+  font-size: 25px;
+}
+.projects-page .main-post-div .content-here .wp-image-17, .projects-page .main-post-div .content-here .wp-image-94, .projects-page .main-post-div .content-here .wp-image-71 {
+  border-radius: 15px;
+}
+.projects-page .main-post-div .content-here .swiperJS-container {
+  padding-left: 100px;
+}
+.projects-page .main-post-div .content-here .mota-gallery {
+  padding-bottom: 40px;
+}
+.projects-page .main-post-div .content-here .key-features {
+  margin-left: 12%;
+  padding-top: 5%;
+  margin-left: 25%;
+  width: 60%;
+}
+.projects-page .main-post-div .content-here .key-features h3 {
+  font-size: 35px;
+  letter-spacing: -1px;
+  font-weight: 400;
+}
+.projects-page .main-post-div .content-here .content-box {
+  width: 70%;
+  margin-left: 12%;
+  padding-bottom: 50px;
+  margin-left: 23%;
+}
+.projects-page .main-post-div .content-here .content-box p {
+  padding-bottom: 30px;
 }
 .projects-page .main-post-div .content-here .banner-image {
-  background-color: bisque;
   padding: 20px;
+  padding-bottom: 50px;
 }
 .projects-page .main-post-div .content-here .banner-image img {
-  width: 50%;
+  width: 60%;
   height: auto;
-  margin-left: 25% !important;
+  margin-left: 22% !important;
   -o-object-fit: cover;
      object-fit: cover;
-  border: 2px solid grey;
+  border-radius: 20px;
   justify-content: center;
   align-content: center;
 }
+.projects-page .main-post-div .github-container .github-img {
+  width: 80px;
+  margin-left: 2%;
+  margin-top: 5%;
+  cursor: pointer;
+}
+.projects-page .main-post-div .github-container .github-img:hover {
+  box-shadow: 0 0 25px #ffffff;
+  transition-duration: 0.5s;
+  border-radius: 50%;
+}
+.projects-page .koukaki-video {
+  width: 80%;
+  border-radius: 50px;
+  margin-left: 10%;
+}
+
 .form-overlay {
   position: fixed;
   height: 100vh;
@@ -312,6 +428,7 @@ h3 {
   top: 10px;
   animation-name: hover-out;
   animation-duration: 1s;
+  cursor: pointer;
 }
 .form-overlay .form-container .form .form-close:hover {
   animation: hover-in 1s forwards;
@@ -327,14 +444,15 @@ h3 {
 }
 .form-overlay .form-container .form input {
   height: 30px;
-  border: 1px black solid;
+  border: 1px rgb(41, 60, 99) solid;
   border-top: none;
   border-left: none;
   border-right: none;
   font-family: "Kanit";
+  color: rgb(41, 60, 99);
 }
 .form-overlay .form-container .form input:hover {
-  border-bottom: 2px black solid;
+  border-bottom: 2px rgb(41, 60, 99) solid;
 }
 .form-overlay .form-container .form input::-moz-placeholder {
   color: rgb(167, 167, 167);
@@ -346,15 +464,16 @@ h3 {
   border: none;
 }
 .form-overlay .form-container .form textarea {
-  border: 1px black solid;
+  border: 1px rgb(41, 60, 99) solid;
   border-top: none;
   border-left: none;
   border-right: none;
   resize: none !important;
+  color: rgb(41, 60, 99);
   cursor: text;
 }
 .form-overlay .form-container .form textarea:hover {
-  border-bottom: 2px black solid;
+  border-bottom: 2px rgb(41, 60, 99) solid;
 }
 .form-overlay .form-container .form .wpcf7-submit {
   padding: 10px;
@@ -370,7 +489,7 @@ h3 {
   letter-spacing: 1.5px;
 }
 .form-overlay .form-container .form .wpcf7-submit:hover {
-  background-color: black;
+  background-color: rgb(41, 60, 99);
   color: white;
   transition: 0.6s;
 }
@@ -381,11 +500,11 @@ h3 {
 }
 
 .slideOut {
-  animation: slideOut 1s forwards;
+  animation: slideOut 0.5s forwards;
 }
 
 .slideIn {
-  animation: slideIn 2s forwards;
+  animation: slideIn 1.2s forwards;
 }
 
 @keyframes slideIn {

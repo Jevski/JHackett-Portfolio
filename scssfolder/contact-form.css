@@ -41,6 +41,7 @@
   top: 10px;
   animation-name: hover-out;
   animation-duration: 1s;
+  cursor: pointer;
 }
 .form-overlay .form-container .form .form-close:hover {
   animation: hover-in 1s forwards;
@@ -56,14 +57,15 @@
 }
 .form-overlay .form-container .form input {
   height: 30px;
-  border: 1px black solid;
+  border: 1px rgb(41, 60, 99) solid;
   border-top: none;
   border-left: none;
   border-right: none;
   font-family: "Kanit";
+  color: rgb(41, 60, 99);
 }
 .form-overlay .form-container .form input:hover {
-  border-bottom: 2px black solid;
+  border-bottom: 2px rgb(41, 60, 99) solid;
 }
 .form-overlay .form-container .form input::-moz-placeholder {
   color: rgb(167, 167, 167);
@@ -75,15 +77,16 @@
   border: none;
 }
 .form-overlay .form-container .form textarea {
-  border: 1px black solid;
+  border: 1px rgb(41, 60, 99) solid;
   border-top: none;
   border-left: none;
   border-right: none;
   resize: none !important;
+  color: rgb(41, 60, 99);
   cursor: text;
 }
 .form-overlay .form-container .form textarea:hover {
-  border-bottom: 2px black solid;
+  border-bottom: 2px rgb(41, 60, 99) solid;
 }
 .form-overlay .form-container .form .wpcf7-submit {
   padding: 10px;
@@ -99,7 +102,7 @@
   letter-spacing: 1.5px;
 }
 .form-overlay .form-container .form .wpcf7-submit:hover {
-  background-color: black;
+  background-color: rgb(41, 60, 99);
   color: white;
   transition: 0.6s;
 }
@@ -110,11 +113,11 @@
 }
 
 .slideOut {
-  animation: slideOut 1s forwards;
+  animation: slideOut 0.5s forwards;
 }
 
 .slideIn {
-  animation: slideIn 2s forwards;
+  animation: slideIn 1.2s forwards;
 }
 
 @keyframes slideIn {

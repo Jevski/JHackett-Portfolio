@@ -20,7 +20,7 @@
                     // Custom query to fetch portfolio items
                     $portfolio_query = new WP_Query(array(
                         'post_type' => 'project',
-                        'posts_per_page' => -1,
+                        'posts_per_page' => 2,
                         'order' => 'DESC'
                     ));
 
@@ -28,13 +28,15 @@
                         while ($portfolio_query->have_posts()) : $portfolio_query->the_post(); ?>
                             <div class="portfolio-item">
                                 <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-                                <div class="portfolio-thumbnail">
-                                    <a href="<?php the_permalink(); ?>">
-                                        <?php the_post_thumbnail('medium'); ?>
-                                    </a>
-                                </div>
-                                <div class="portfolio-description">
-                                    <?php the_excerpt(); ?>
+                                <div class="item-content">
+                                    <div class="portfolio-thumbnail">
+                                        <a href="<?php the_permalink(); ?>">
+                                            <?php the_post_thumbnail('medium'); ?>
+                                        </a>
+                                    </div>
+                                    <div class="portfolio-description">
+                                        <?php the_excerpt(); ?>
+                                    </div>
                                 </div>
                             </div>
                         <?php endwhile;

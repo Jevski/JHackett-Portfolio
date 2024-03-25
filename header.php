@@ -39,8 +39,8 @@
         <a href="#skills">Skills</a>
     </div>
 
-    <div class="menu-item contact-menu">
-        <a>Contact</a>
+    <div class="menu-item ">
+        <a class="contact-menu" >Contact</a>
     </div>
 </div>
 

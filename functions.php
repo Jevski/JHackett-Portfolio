@@ -35,7 +35,7 @@ add_action('wp_enqueue_scripts', 'portfolio_enqueue_scripts');
 
 
 function wpdocs_custom_excerpt_length( $length ) {
-	return 25;
+	return 45;
 }
 add_filter( 'excerpt_length', 'wpdocs_custom_excerpt_length', 999 );
 

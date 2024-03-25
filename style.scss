@@ -1,12 +1,20 @@
+html{
+    margin-top:-8px !important;
+    margin-right:-20px;
+    width:100vw;
+}
 .body{
-    background-color: rgb(219, 210, 197);
+    background: linear-gradient(0deg, rgb(131, 202, 203) 0%, rgb(166, 160, 246) 100%);
+
     font-family: 'Oswald';
+    color: rgb(41, 60, 99);
 }
 h2{
-    margin-left:5%;
-    font-size: 40px;
+    margin-left:35%;
+    font-size: 50px;
     line-height: 40px;
     letter-spacing:1.5px;
+    color: rgb(41, 60, 99);
 }
 a:-webkit-any-link {
     color:inherit;
@@ -26,3 +34,4 @@ fieldset{
 @import "scssfolder/aboutme.scss";
 @import "scssfolder/single-projects.scss";
 @import "scssfolder/contact-form.scss";
+

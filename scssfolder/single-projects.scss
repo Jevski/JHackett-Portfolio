@@ -1,29 +1,111 @@
 .projects-page{
-    background-color: aliceblue;
+    font-family: 'Oswald';
+    color: rgb(41, 60, 99);
+
+    width:100%;
+    background: linear-gradient(0deg, rgb(131, 202, 203) 30%, rgb(166, 160, 246) 100%);   
+    height:auto;
+    padding-bottom:100px;
+    font-size: 20px;
+        .banner-image{
+            background-color: transparent;
+            margin-left:10%;
+        }
+
 
     .main-post-div{
 
-
+.single-page-post-heading{
+    padding-top:40px;
+    margin-left:55%;
+    font-size: 50px;
+}
         .content-here{
+            margin-left:20%;
+
+
+            .wp-element-caption{
+                font-size: 25px;
+            }
+            .wp-image-17, .wp-image-94, .wp-image-71{
+            border-radius: 15px;
+            }
+            .swiperJS-container{
+               padding-left:100px;
+            }
+            .mota-gallery{
+                padding-bottom:40px;
+            }
+            
+
+            .key-features{
+                margin-left:12%;
+                padding-top:5%;
+                margin-left:25%;
+                width:60%;
+                
+                h3{
+                    font-size: 35px;
+                    letter-spacing: -1px;
+                    font-weight: 400;
+                    
+                }
+            }
+
+            .content-box{
+                width:70%;
+                margin-left:12%;
+                padding-bottom:50px;
+                margin-left:23%;
+                
+                & p{
+                    padding-bottom:30px;
+                }
+
+            }
 
             .banner-image {
-                background-color: bisque;
+             
                 padding:20px;
+                padding-bottom:50px;
             }
             
             .banner-image img{
-                width:50%;
+                width:60%;
                 height:auto;
-                margin-left:25% !important;
+                margin-left:22% !important;
                 object-fit: cover;
-                border: 2px solid grey;
+                
+                border-radius: 20px;
                 justify-content: center;
                 align-content: center;
             }
         
-            .single-page-post-heading{
-
-            }
         }
+
+        .github-container{
+
+            .github-img{
+                width:80px;
+                margin-left:2%;
+                margin-top:5%;
+                cursor: pointer;
+                
+    
+            &:hover{
+                box-shadow: 0 0 25px #ffffff;
+                transition-duration: 0.5s;
+                border-radius: 50%;
+            }
+
+
+        }
+        }
+    }
+
+    .koukaki-video{
+        width:80%;
+        border-radius: 50px;
+        margin-left:10%;
     }
 }

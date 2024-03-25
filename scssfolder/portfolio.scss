@@ -6,14 +6,14 @@ h3{
 }
 .portfolio{
     height:100vh;
-    padding-bottom:50px;
+    padding-bottom:-50px;
     padding-top:50px;
-    background-color: rgb(156, 156, 156);
-    width:70%;
-    border: 2px solid rgb(99, 99, 99);
+    background: linear-gradient(0deg, rgb(131, 202, 203) 100%, rgb(166, 160, 246) 0%);
+        width:70%;
     margin-left:30%;
+    
     .portfolio-title{
-    margin-left:55% !important;
+    margin-left:45% !important;
    margin-bottom:50px;
 }
     .content-area{
@@ -23,38 +23,48 @@ h3{
 
         .portfolio-each{
             display:flex;
+            flex-direction: column;
+            row-gap: 30px;
             justify-content: space-evenly;
-            width:80%;
+            width:70%;
             margin-left:10%;
-            background-color: red;
-            columns: 3;
-            flex-wrap: wrap;
             padding:20px;
-            row-gap: 40px;
+            
             height:auto;
             .portfolio-item{
                 
-                background-color: rgb(255, 255, 255);
-                border: 2px solid rgb(53, 52, 52);
+                background-color:transparent;
+                
                 border-radius: 10px;
-                width:300px;
-                height:380px;
-                margin:auto;
+                width:840px;
+                height:330px;
+                margin-left:10%;
+                &:hover{
+                    box-shadow: 0 0 10px 3px rgba(246,219,160,1);
+                    background-color:rgba(255, 255, 255, 0.2);
+                    
+                }
                 & h3{
-                    margin-left:20%;
+                    margin-left:40%;
                     justify-content: center;
                     text-decoration: none !important;
                 }
                 .portfolio-thumbnail img{
-                    width:80%;
-                    object-fit: fill;
+                    width:300px;
+                    object-fit: cover;
                     margin-left:30px;
+                    border-radius: 5px;
                 }
                 .portfolio-description{
-                   padding:5%;
+                   padding:2%;
+                }
+                .item-content{
+                    display: inline-flex;
                 }
                 }
             }
         }
     }
 }
+
+

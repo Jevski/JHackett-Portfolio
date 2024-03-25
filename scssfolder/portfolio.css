@@ -6,49 +6,52 @@ h3 {
 
 .portfolio {
   height: 100vh;
-  padding-bottom: 50px;
+  padding-bottom: -50px;
   padding-top: 50px;
-  background-color: rgb(156, 156, 156);
+  background: linear-gradient(0deg, rgb(131, 202, 203) 100%, rgb(166, 160, 246) 0%);
   width: 70%;
-  border: 2px solid rgb(99, 99, 99);
   margin-left: 30%;
 }
 .portfolio .portfolio-title {
-  margin-left: 55% !important;
+  margin-left: 45% !important;
   margin-bottom: 50px;
 }
 .portfolio .content-area .entry-content .portfolio-each {
   display: flex;
+  flex-direction: column;
+  row-gap: 30px;
   justify-content: space-evenly;
-  width: 80%;
+  width: 70%;
   margin-left: 10%;
-  background-color: red;
-  -moz-columns: 3;
-       columns: 3;
-  flex-wrap: wrap;
   padding: 20px;
-  row-gap: 40px;
   height: auto;
 }
 .portfolio .content-area .entry-content .portfolio-each .portfolio-item {
-  background-color: rgb(255, 255, 255);
-  border: 2px solid rgb(53, 52, 52);
+  background-color: transparent;
   border-radius: 10px;
-  width: 300px;
-  height: 380px;
-  margin: auto;
+  width: 840px;
+  height: 330px;
+  margin-left: 10%;
+}
+.portfolio .content-area .entry-content .portfolio-each .portfolio-item:hover {
+  box-shadow: 0 0 10px 3px rgb(246, 219, 160);
+  background-color: rgba(255, 255, 255, 0.2);
 }
 .portfolio .content-area .entry-content .portfolio-each .portfolio-item h3 {
-  margin-left: 20%;
+  margin-left: 40%;
   justify-content: center;
   text-decoration: none !important;
 }
 .portfolio .content-area .entry-content .portfolio-each .portfolio-item .portfolio-thumbnail img {
-  width: 80%;
-  -o-object-fit: fill;
-     object-fit: fill;
+  width: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
   margin-left: 30px;
+  border-radius: 5px;
 }
 .portfolio .content-area .entry-content .portfolio-each .portfolio-item .portfolio-description {
-  padding: 5%;
+  padding: 2%;
+}
+.portfolio .content-area .entry-content .portfolio-each .portfolio-item .item-content {
+  display: inline-flex;
 }
