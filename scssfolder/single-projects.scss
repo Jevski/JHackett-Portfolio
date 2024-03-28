@@ -40,7 +40,7 @@
 
             .key-features{
                 margin-left:12%;
-                padding-top:5%;
+                
                 margin-left:25%;
                 width:60%;
                 
@@ -59,8 +59,29 @@
                 margin-left:23%;
                 
                 & p{
-                    padding-bottom:30px;
+                    padding-bottom:10px;
                 }
+                & span:hover{
+                    color: rgb(143, 121, 184);
+                }
+
+            }
+            .tools{
+                font-family:'Kanit';
+                font-weight:300;
+                margin-left:15px;
+
+                & span{
+                    color: rgb(101, 64, 170);
+                    padding-right:10px;
+                }
+                .tools-title{
+                    padding-top:15px;
+                    margin-bottom:2px;
+                    margin-left:15px;
+                    font-weight:500;
+                }
+
 
             }
 

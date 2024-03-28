@@ -33,7 +33,6 @@
 }
 .projects-page .main-post-div .content-here .key-features {
   margin-left: 12%;
-  padding-top: 5%;
   margin-left: 25%;
   width: 60%;
 }
@@ -49,7 +48,25 @@
   margin-left: 23%;
 }
 .projects-page .main-post-div .content-here .content-box p {
-  padding-bottom: 30px;
+  padding-bottom: 10px;
+}
+.projects-page .main-post-div .content-here .content-box span:hover {
+  color: rgb(143, 121, 184);
+}
+.projects-page .main-post-div .content-here .tools {
+  font-family: "Kanit";
+  font-weight: 300;
+  margin-left: 15px;
+}
+.projects-page .main-post-div .content-here .tools span {
+  color: rgb(101, 64, 170);
+  padding-right: 10px;
+}
+.projects-page .main-post-div .content-here .tools .tools-title {
+  padding-top: 15px;
+  margin-bottom: 2px;
+  margin-left: 15px;
+  font-weight: 500;
 }
 .projects-page .main-post-div .content-here .banner-image {
   padding: 20px;

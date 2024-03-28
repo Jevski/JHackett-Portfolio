@@ -15,7 +15,11 @@
  <?php /* The loop */ ?>
             <?php while ( have_posts() ) : the_post(); 
             $features = get_post_meta(get_the_ID(), 'key-features', true);
-            $links = get_post_meta(get_thE_ID(), 'github', true);
+            $links = get_post_meta(get_the_ID(), 'github', true);
+
+            $custom_post_type_id = get_the_ID(); // Assuming you have the ID of the custom post type
+
+            $tools = wp_get_object_terms($custom_post_type_id, 'tools');
             
             ;?>
                 <div class="main-post-div">
@@ -26,6 +30,20 @@
                 <div class="banner-image"><?php the_post_thumbnail('full'); ?></div>
                 <div class="content-box">
                     <?php  the_content();  ?>
+                    <div class="tools">
+                        <h4 class="tools-title"> Tools & libraries</h4>
+                        <?php 
+                          if ($tools && !is_wp_error($tools)) {
+                            echo '<div class="tools">';
+                            foreach ($tools as $tool) {
+                                echo '<span class="tool-text">' . $tool->name . '</span>';
+                                echo " ";
+                            }
+                            echo '</div>';
+                           
+                        }
+                        ?>
+                    </div>
                 </div>
                 <div class="key-features">
                     <h3> Key Features</h3>

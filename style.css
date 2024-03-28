@@ -31,6 +31,25 @@ fieldset {
   display: none;
 }
 
+.language-menu {
+  position: fixed;
+  top: 90%;
+  text-decoration: none;
+  list-style: none;
+}
+.language-menu ul {
+  list-style: none !important;
+}
+.language-menu #menu-language {
+  display: flex;
+  padding: 20px;
+  gap: 10px;
+}
+.language-menu #menu-language img {
+  height: 15px !important;
+  width: 25px !important;
+}
+
 .header-navigation {
   position: fixed;
   background: linear-gradient(0deg, rgb(131, 202, 203) 30%, rgb(166, 160, 246) 100%);
@@ -63,6 +82,13 @@ fieldset {
 }
 .header-navigation .menu-navigation .menu-item .home-button-menu {
   cursor: pointer;
+}
+.header-navigation .mobile-header {
+  display: none;
+}
+.header-navigation .mobile-header .burger-icon {
+  height: 40px;
+  width: 40px;
 }
 
 .menu-item:hover {
@@ -153,7 +179,7 @@ fieldset {
 }
 #skills .skills-title {
   padding: 35px;
-  margin-left: 40%;
+  margin-left: 37%;
 }
 #skills .skills-info {
   display: inline-flex;
@@ -206,7 +232,7 @@ h3 {
   background-color: transparent;
   border-radius: 10px;
   width: 840px;
-  height: 330px;
+  height: 260px;
   margin-left: 10%;
 }
 .portfolio .content-area .entry-content .portfolio-each .portfolio-item:hover {
@@ -214,19 +240,21 @@ h3 {
   background-color: rgba(255, 255, 255, 0.2);
 }
 .portfolio .content-area .entry-content .portfolio-each .portfolio-item h3 {
-  margin-left: 40%;
+  margin-left: 55%;
   justify-content: center;
   text-decoration: none !important;
 }
 .portfolio .content-area .entry-content .portfolio-each .portfolio-item .portfolio-thumbnail img {
   width: 300px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  height: 180px;
   margin-left: 30px;
   border-radius: 5px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-top: -20%;
 }
 .portfolio .content-area .entry-content .portfolio-each .portfolio-item .portfolio-description {
-  padding: 2%;
+  padding-left: 40px;
 }
 .portfolio .content-area .entry-content .portfolio-each .portfolio-item .item-content {
   display: inline-flex;
@@ -336,7 +364,6 @@ h3 {
 }
 .projects-page .main-post-div .content-here .key-features {
   margin-left: 12%;
-  padding-top: 5%;
   margin-left: 25%;
   width: 60%;
 }
@@ -352,7 +379,25 @@ h3 {
   margin-left: 23%;
 }
 .projects-page .main-post-div .content-here .content-box p {
-  padding-bottom: 30px;
+  padding-bottom: 10px;
+}
+.projects-page .main-post-div .content-here .content-box span:hover {
+  color: rgb(143, 121, 184);
+}
+.projects-page .main-post-div .content-here .tools {
+  font-family: "Kanit";
+  font-weight: 300;
+  margin-left: 15px;
+}
+.projects-page .main-post-div .content-here .tools span {
+  color: rgb(101, 64, 170);
+  padding-right: 10px;
+}
+.projects-page .main-post-div .content-here .tools .tools-title {
+  padding-top: 15px;
+  margin-bottom: 2px;
+  margin-left: 15px;
+  font-weight: 500;
 }
 .projects-page .main-post-div .content-here .banner-image {
   padding: 20px;
@@ -412,7 +457,7 @@ h3 {
   right: 0;
 }
 .form-overlay .form-container .form:hover {
-  box-shadow: 0 0 10px 8px rgb(58, 58, 58);
+  box-shadow: 0 0 20px 1px rgb(58, 58, 58);
 }
 .form-overlay .form-container .form .inner-form {
   display: flex;
@@ -546,5 +591,215 @@ h3 {
   }
   100% {
     scale: 1;
+  }
+}
+@media (width <= 550px) {
+  .header-navigation {
+    z-index: 200;
+    width: 100% !important;
+    height: 50px !important;
+  }
+  .header-navigation .logo-navigation {
+    height: 20px;
+  }
+  .header-navigation .menu-navigation {
+    display: none;
+    width: 50% !important;
+    margin-left: 45%;
+    height: 40px !important;
+    display: flex;
+    flex-direction: row;
+    margin-top: 0%;
+    justify-content: space-evenly;
+    row-gap: -100px !important;
+  }
+  .header-navigation .menu-navigation .menu-item {
+    font-size: 30px !important;
+  }
+  .mobile-header {
+    display: block !important;
+  }
+  .mobile-header .burger-icon {
+    position: relative;
+    margin-left: 75%;
+  }
+  .open-menu-navigation {
+    margin-top: 6.5%;
+    margin-left: -30px !important;
+    background-color: rgb(131, 202, 203);
+    width: 110vw !important;
+    height: 100vh !important;
+    justify-content: center;
+    text-align: center;
+    z-index: 199;
+    padding-top: 15px !important;
+  }
+  .open-menu-navigation .mobile-menu-item {
+    padding: 20px;
+    font-size: 40px;
+  }
+  .banner {
+    display: none;
+  }
+  #about-me {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100% !important;
+    height: 50vh !important;
+    margin-left: 0;
+    flex-direction: row;
+    margin-top: 30% !important;
+  }
+  #about-me .aboutme {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  #about-me .about-me-title {
+    top: 10%;
+    font-size: 30px;
+    margin: auto;
+  }
+  #about-me .photo-aboutme {
+    height: 150px !important;
+    width: 150px !important;
+    margin-left: 23% !important;
+  }
+  #about-me .about-me-info {
+    width: 90% !important;
+    display: block;
+    padding-right: 0px !important;
+    font-size: 13px !important;
+    margin-left: 0 !important;
+    padding-left: 10px !important;
+  }
+  .portfolio {
+    margin-left: 0 !important;
+    width: 100%;
+    padding-bottom: 100px;
+    height: 900px;
+  }
+  .portfolio .portfolio-title {
+    margin-top: 50px !important;
+    margin-left: 38% !important;
+    font-size: 30px;
+    margin-bottom: 1px !important;
+  }
+  .portfolio .content-area {
+    width: 100%;
+  }
+  .portfolio .content-area .portfolio-item {
+    display: flex !important;
+    flex-direction: column !important;
+    width: 100vw !important;
+    height: 400px !important;
+  }
+  .portfolio .content-area .portfolio-item:hover {
+    box-shadow: none !important;
+  }
+  .portfolio .content-area .portfolio-item h3 {
+    margin-left: 0 !important;
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 10px;
+  }
+  .portfolio .content-area .portfolio-item .item-content {
+    display: inline-flex !important;
+    flex-direction: column !important;
+    margin-top: 15%;
+  }
+  .portfolio .content-area .portfolio-item .item-content .portfolio-thumbnail img {
+    height: 160px !important;
+    width: auto !important;
+  }
+  .portfolio .content-area .portfolio-item .item-content .portfolio-description {
+    width: 70% !important;
+    text-align: center;
+  }
+  .portfolio .content-area .portfolio-each {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 70% !important;
+    margin-left: -7% !important;
+    padding: 20px !important;
+    height: auto;
+  }
+  #skills {
+    margin-left: 0% !important;
+  }
+  #skills .skills-title {
+    margin-left: 20% !important;
+    font-size: 30px;
+    padding-top: 0px;
+  }
+  #skills .skills-info {
+    margin: auto;
+    padding-bottom: 30px;
+  }
+  #skills .skills-info img {
+    height: 60px !important;
+    width: 50px !important;
+    padding: 10px;
+  }
+  #skills .skills-text {
+    margin: auto;
+    font-size: 13px;
+    text-align: center;
+    width: 70%;
+  }
+  .form {
+    width: 75% !important;
+    height: 600px !important;
+    margin-left: -18% !important;
+    margin-top: 20% !important;
+    padding: 10px !important;
+    padding-right: 30px !important;
+  }
+  .form .inner-form {
+    margin-left: 5% !important;
+  }
+  .main-post-div {
+    width: 450px !important;
+    padding: 0;
+  }
+  .projects-page .main-post-div .single-page-post-heading {
+    padding-top: 140px;
+    margin-left: 25% !important;
+    font-size: 30px !important;
+  }
+  .content-here {
+    margin-left: 0 !important;
+  }
+  .content-here .banner-image {
+    width: 100% !important;
+    margin: auto !important;
+    padding: 0 !important;
+  }
+  .content-here .content-box {
+    margin: auto !important;
+    font-size: 15px;
+  }
+  .content-here .content-box .wp-element-caption {
+    font-size: 18px !important;
+  }
+  .key-features {
+    margin-left: 20% !important;
+    font-size: 15px !important;
+  }
+  .key-features h3 {
+    font-size: 27px !important;
+  }
+  .github-img {
+    width: 50px !important;
+  }
+  .body {
+    margin-left: 0% !important;
+    width: 105%;
+    height: 100%;
+  }
+  html {
+    width: 100% !important;
+    height: 100%;
+    background: linear-gradient(0deg, rgb(131, 202, 203) 0%, rgb(166, 160, 246) 100%);
   }
 }

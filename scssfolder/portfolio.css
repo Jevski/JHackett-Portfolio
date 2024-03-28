@@ -30,7 +30,7 @@ h3 {
   background-color: transparent;
   border-radius: 10px;
   width: 840px;
-  height: 330px;
+  height: 260px;
   margin-left: 10%;
 }
 .portfolio .content-area .entry-content .portfolio-each .portfolio-item:hover {
@@ -38,19 +38,21 @@ h3 {
   background-color: rgba(255, 255, 255, 0.2);
 }
 .portfolio .content-area .entry-content .portfolio-each .portfolio-item h3 {
-  margin-left: 40%;
+  margin-left: 55%;
   justify-content: center;
   text-decoration: none !important;
 }
 .portfolio .content-area .entry-content .portfolio-each .portfolio-item .portfolio-thumbnail img {
   width: 300px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  height: 180px;
   margin-left: 30px;
   border-radius: 5px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-top: -20%;
 }
 .portfolio .content-area .entry-content .portfolio-each .portfolio-item .portfolio-description {
-  padding: 2%;
+  padding-left: 40px;
 }
 .portfolio .content-area .entry-content .portfolio-each .portfolio-item .item-content {
   display: inline-flex;

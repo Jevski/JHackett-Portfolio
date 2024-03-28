@@ -1,5 +1,5 @@
 <section class="portfolio">
-    <div id="" class="content-area">
+    <div id="portfolio" class="content-area">
         <article id="post-<?php the_ID(); ?>" <?php post_class(); ?> >
             <h2 class="portfolio-title">Portfolio</h2>
             <div class="entry-content">

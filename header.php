@@ -8,8 +8,8 @@
         <!-- Import Google Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">        <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet"> 
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>       
         <title>Jakes Portfolio</title> <!-- Set the title of the page -->
         <?php wp_head(); ?> 
     </head>
@@ -23,20 +23,20 @@
 <header class="header-navigation">
 <img class="logo-navigation" href="<?php echo home_url(); ?>" src="<?php echo get_template_directory_uri(); ?>\Assets\logo.jpg">
 
-</div>
+
 
 <div class="menu-navigation">
 
     <div class="menu-item">
-        <a href="http://portfolio.local/" class="home-button-menu">Home</a>
+        <a href="http://portfolio.local/" class="home-button-menu">Accueil</a>
     </div>
 
     <div class="menu-item">
-        <a href="http://portfolio.local/" >Portfolio</a>
+        <a href="http://portfolio.local/#portfolio" >Portfolio</a>
     </div>
 
     <div class="menu-item">
-        <a href="#skills">Skills</a>
+        <a href="http://portfolio.local/#skills">Compétences</a>
     </div>
 
     <div class="menu-item ">
@@ -46,8 +46,26 @@
 
 
 </div>
+<div class="mobile-header">
+    <img class="burger-icon" src="<?php echo get_template_directory_uri(); ?>\Assets\menu.png">
+
+    <?php get_template_part('/template-parts/open-menu'); ?>
+
+</div>
 
 </header>
+
+<!-- 
+<div class="language-menu">
+<?php 
+    wp_nav_menu(
+        array(
+            'menu'=> 'Language',
+            'container' => '',
+        )
+    );
+?>
+</div> -->
 
 
 </body>

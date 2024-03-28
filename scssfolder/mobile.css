@@ -1,0 +1,210 @@
+@media (width <= 550px) {
+  .header-navigation {
+    z-index: 200;
+    width: 100% !important;
+    height: 50px !important;
+  }
+  .header-navigation .logo-navigation {
+    height: 20px;
+  }
+  .header-navigation .menu-navigation {
+    display: none;
+    width: 50% !important;
+    margin-left: 45%;
+    height: 40px !important;
+    display: flex;
+    flex-direction: row;
+    margin-top: 0%;
+    justify-content: space-evenly;
+    row-gap: -100px !important;
+  }
+  .header-navigation .menu-navigation .menu-item {
+    font-size: 30px !important;
+  }
+  .mobile-header {
+    display: block !important;
+  }
+  .mobile-header .burger-icon {
+    position: relative;
+    margin-left: 75%;
+  }
+  .open-menu-navigation {
+    margin-top: 6.5%;
+    margin-left: -30px !important;
+    background-color: rgb(131, 202, 203);
+    width: 110vw !important;
+    height: 100vh !important;
+    justify-content: center;
+    text-align: center;
+    z-index: 199;
+    padding-top: 15px !important;
+  }
+  .open-menu-navigation .mobile-menu-item {
+    padding: 20px;
+    font-size: 40px;
+  }
+  .banner {
+    display: none;
+  }
+  #about-me {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100% !important;
+    height: 50vh !important;
+    margin-left: 0;
+    flex-direction: row;
+    margin-top: 30% !important;
+  }
+  #about-me .aboutme {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  #about-me .about-me-title {
+    top: 10%;
+    font-size: 30px;
+    margin: auto;
+  }
+  #about-me .photo-aboutme {
+    height: 150px !important;
+    width: 150px !important;
+    margin-left: 23% !important;
+  }
+  #about-me .about-me-info {
+    width: 90% !important;
+    display: block;
+    padding-right: 0px !important;
+    font-size: 13px !important;
+    margin-left: 0 !important;
+    padding-left: 10px !important;
+  }
+  .portfolio {
+    margin-left: 0 !important;
+    width: 100%;
+    padding-bottom: 100px;
+    height: 900px;
+  }
+  .portfolio .portfolio-title {
+    margin-top: 50px !important;
+    margin-left: 38% !important;
+    font-size: 30px;
+    margin-bottom: 1px !important;
+  }
+  .portfolio .content-area {
+    width: 100%;
+  }
+  .portfolio .content-area .portfolio-item {
+    display: flex !important;
+    flex-direction: column !important;
+    width: 100vw !important;
+    height: 400px !important;
+  }
+  .portfolio .content-area .portfolio-item:hover {
+    box-shadow: none !important;
+  }
+  .portfolio .content-area .portfolio-item h3 {
+    margin-left: 0 !important;
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 10px;
+  }
+  .portfolio .content-area .portfolio-item .item-content {
+    display: inline-flex !important;
+    flex-direction: column !important;
+    margin-top: 15%;
+  }
+  .portfolio .content-area .portfolio-item .item-content .portfolio-thumbnail img {
+    height: 160px !important;
+    width: auto !important;
+  }
+  .portfolio .content-area .portfolio-item .item-content .portfolio-description {
+    width: 70% !important;
+    text-align: center;
+  }
+  .portfolio .content-area .portfolio-each {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 70% !important;
+    margin-left: -7% !important;
+    padding: 20px !important;
+    height: auto;
+  }
+  #skills {
+    margin-left: 0% !important;
+  }
+  #skills .skills-title {
+    margin-left: 20% !important;
+    font-size: 30px;
+    padding-top: 0px;
+  }
+  #skills .skills-info {
+    margin: auto;
+    padding-bottom: 30px;
+  }
+  #skills .skills-info img {
+    height: 60px !important;
+    width: 50px !important;
+    padding: 10px;
+  }
+  #skills .skills-text {
+    margin: auto;
+    font-size: 13px;
+    text-align: center;
+    width: 70%;
+  }
+  .form {
+    width: 75% !important;
+    height: 600px !important;
+    margin-left: -18% !important;
+    margin-top: 20% !important;
+    padding: 10px !important;
+    padding-right: 30px !important;
+  }
+  .form .inner-form {
+    margin-left: 5% !important;
+  }
+  .main-post-div {
+    width: 450px !important;
+    padding: 0;
+  }
+  .projects-page .main-post-div .single-page-post-heading {
+    padding-top: 140px;
+    margin-left: 25% !important;
+    font-size: 30px !important;
+  }
+  .content-here {
+    margin-left: 0 !important;
+  }
+  .content-here .banner-image {
+    width: 100% !important;
+    margin: auto !important;
+    padding: 0 !important;
+  }
+  .content-here .content-box {
+    margin: auto !important;
+    font-size: 15px;
+  }
+  .content-here .content-box .wp-element-caption {
+    font-size: 18px !important;
+  }
+  .key-features {
+    margin-left: 20% !important;
+    font-size: 15px !important;
+  }
+  .key-features h3 {
+    font-size: 27px !important;
+  }
+  .github-img {
+    width: 50px !important;
+  }
+  .body {
+    margin-left: 0% !important;
+    width: 105%;
+    height: 100%;
+  }
+  html {
+    width: 100% !important;
+    height: 100%;
+    background: linear-gradient(0deg, rgb(131, 202, 203) 0%, rgb(166, 160, 246) 100%);
+  }
+}

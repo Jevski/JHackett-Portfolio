@@ -34,10 +34,9 @@ h3{
             .portfolio-item{
                 
                 background-color:transparent;
-                
                 border-radius: 10px;
                 width:840px;
-                height:330px;
+                height:260px;
                 margin-left:10%;
                 &:hover{
                     box-shadow: 0 0 10px 3px rgba(246,219,160,1);
@@ -45,21 +44,25 @@ h3{
                     
                 }
                 & h3{
-                    margin-left:40%;
+                    margin-left:55%;
                     justify-content: center;
                     text-decoration: none !important;
                 }
                 .portfolio-thumbnail img{
                     width:300px;
-                    object-fit: cover;
+                    height:180px;
                     margin-left:30px;
                     border-radius: 5px;
+                    object-fit: cover;
+                    margin-top:-20%;
                 }
                 .portfolio-description{
-                   padding:2%;
+                   
+                   padding-left:40px;
                 }
                 .item-content{
                     display: inline-flex;
+                    
                 }
                 }
             }

@@ -26,7 +26,26 @@ fieldset{
 .inactive{
     display:none;
 }
-
+.language-menu{
+    
+    position: fixed;
+    top:90%;
+    text-decoration: none;
+    list-style: none;
+   
+    ul{
+        list-style: none !important;
+    }
+    #menu-language{
+        display:flex;
+        padding:20px;
+        gap: 10px;
+        & img{
+            height:15px !important;
+            width:25px !important;
+        }
+    }
+}
 
 @import "scssfolder/header.scss";
 @import "scssfolder/skills.scss";
@@ -34,4 +53,5 @@ fieldset{
 @import "scssfolder/aboutme.scss";
 @import "scssfolder/single-projects.scss";
 @import "scssfolder/contact-form.scss";
+@import "scssfolder/mobile.scss";
 

@@ -31,6 +31,13 @@
 .header-navigation .menu-navigation .menu-item .home-button-menu {
   cursor: pointer;
 }
+.header-navigation .mobile-header {
+  display: none;
+}
+.header-navigation .mobile-header .burger-icon {
+  height: 40px;
+  width: 40px;
+}
 
 .menu-item:hover {
   animation: grow 0.5s ease-in-out forwards, zoom 0.7s ease-in-out forwards;

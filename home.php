@@ -9,9 +9,9 @@ get_header();
 <body class="body">
 <div class="banner">
     
-    <!-- <img class="header-image" src="<?php echo get_template_directory_uri(); ?>/assets/Header1.JPG" alt='NZ mountains'/> -->
     
-    <h4 class="banner-title">Hi there. I'm Jake Hackett, frontend web developer.</h4>
+    
+    <h4 class="banner-title">Hi. I'm Jake Hackett, frontend web developer.</h4>
 
 </div>
     <section id="about-me">
@@ -22,11 +22,11 @@ get_header();
         </div>
         <div class="about-me-info">
             <!-- Add content for about me section -->
-            <p> Hey there! I'm Jake Hackett, a self-taught front-end web developer with a passion for crafting engaging digital experiences. With a thirst for knowledge and
-                a determination to turn my passion into a career, Over an extensive period of self-directed study and practical application, I have refined my proficiencies
-                 in JavaScript, PHP, HTML, CSS, jQuery, and WordPress, among others. Additionally, I have undertaken a comprehensive curriculum through OpenClassrooms 
-                 in France, augmenting my skills and acclimating myself to the professional environment typical of front-end development. This program provided me with 
-                 invaluable experience in meeting deadlines, delivering presentations upon project completion, and working within collaborative settings.
+            <p> Bonjour à tous ! Je suis Jake Hackett, un développeur web autodidacte avec une passion pour la création d'expériences numériques engageantes. Assoiffé de connaissances et déterminé à faire de ma passion une carrière
+                et déterminé à faire de ma passion une carrière, j'ai affiné mes compétences en JavaScript, PHP, HTML, CSS, jQuery, etc. au cours d'une longue période d'études autodidactes et d'applications pratiques.
+                 en JavaScript, PHP, HTML, CSS, jQuery et WordPress, entre autres. En outre, j'ai suivi un programme d'études complet par l'intermédiaire d'OpenClassrooms 
+                 en France, ce qui m'a permis d'accroître mes compétences et de m'acclimater à l'environnement professionnel typique du développement frontal. Ce programme m'a permis d'acquérir 
+                 Ce programme m'a permis d'acquérir une expérience inestimable en matière de respect des délais, de présentations à l'issue des projets et de travail en collaboration.
         </div>
         
     </div>
@@ -37,7 +37,7 @@ get_header();
 
 
 <section id="skills">
-    <h2 class="skills-title">Skills</h2>
+    <h2 class="skills-title">Compétences</h2>
         <div class="skills-info">
            
             <div class="php-box">
@@ -64,9 +64,13 @@ get_header();
                 <img class="css-icon" src="<?php echo get_template_directory_uri(); ?>\Assets\css-file.png" alt='PHP Icon'/>
 
             </div>
+            <div class="jquery-box">
+                <img class="css-icon" src="<?php echo get_template_directory_uri(); ?>\Assets\jquery.png" alt='PHP Icon'/>
+
+            </div>
         </div>
         <div class="skills-text"> 
-        <span>Combining these skills, you have the capability to create diverse WordPress sites, ranging from simple blogs to complex web applications, while ensuring they are visually appealing, functional, and user-friendly. My ability to leverage these technologies in multiple ways demonstrates my adaptability and proficiency in web development.<br><br> I hope to continue learning and adding skills to my repertoire.</span>
+        <span>En combinant ces compétences, j'ai la capacité de créer des sites WordPress diversifiés, allant des simples blogs aux applications Web complexes, tout en veillant à ce qu'ils soient visuellement attrayants, fonctionnels et conviviaux. Ma capacité à exploiter ces technologies de plusieurs manières démontre mon adaptabilité et mes compétences en développement Web.<br><br> J'espère continuer à apprendre et à ajouter des compétences à mon répertoire.</span>
 </div>
 </section>
 

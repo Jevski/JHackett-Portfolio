@@ -33,6 +33,13 @@
             }
         }
     }
+    .mobile-header{
+display:none;
+      .burger-icon{
+        height:40px;
+        width:40px;
+      }
+    }
 }
 .menu-item:hover{
     animation: grow 0.5s ease-in-out forwards, zoom 0.7s ease-in-out forwards; 
